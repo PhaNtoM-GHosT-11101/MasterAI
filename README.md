@@ -1,7 +1,15 @@
-Problem Statemnt -
-while using different ai (for my case its gemini , Perplexity and ChatGpt[pro versions of all]) , the response vary, and contradicts sometimes. which causes confusion and also extra efforts to get a desired result.
+🚀 The Problem
+Hallucinations: One AI might invent a fact that others don't.
 
-Solution - 
-A simple python code that will take the API key from all these major ai platform , then compare the results with each other and will respond me with the most curated and winning asnwer.
+Contradictions: Perplexity might give you a real-time data point that ChatGPT (with its knowledge cutoff) contradicts.
 
-is the changes shown in github
+Effort Waste: Manually copy-pasting prompts across three tabs is inefficient for a high-level learner.
+
+✨ The Solution: The "Triangulation" Method
+This Python tool treats AI models like a panel of experts:
+
+Parallel Execution: Sends your prompt to Gemini Pro, ChatGPT-4o, and Perplexity Sonar.
+
+Conflict Detection: Analyzes the three outputs for factual discrepancies.
+
+The Jury's Verdict: A "Referee" LLM evaluates all three, discards the "noise," and synthesizes a "Winning Answer" based on the highest consensus and most recent data.
